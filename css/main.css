@@ -391,6 +391,20 @@ h1, h2, h3, h4 {
   justify-content: space-between;
 }
 
+.header-logo--inner {
+  position: relative;
+}
+.header-logo--inner span {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid var(--black-color);
+  background-color: var(--white-color);
+}
+
 .header-nav--logo {
   position: relative;
   z-index: 1;
@@ -399,18 +413,6 @@ h1, h2, h3, h4 {
   display: block;
   width: 60px;
   height: 60px;
-}
-.header-nav--logo::after {
-  content: "";
-  position: fixed;
-  z-index: -1;
-  right: -4px;
-  bottom: -4px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  border: 1px solid var(--black-color);
-  background-color: var(--white-color);
 }
 .header-nav--logo:active {
   bottom: -4px;
