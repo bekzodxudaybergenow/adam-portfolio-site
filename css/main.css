@@ -383,6 +383,10 @@ h1, h2, h3, h4 {
   transform: translateX(0) !important;
 }
 
+.shade {
+  transform: translateX(0) !important;
+}
+
 .header {
   position: relative;
   overflow: hidden;
