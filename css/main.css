@@ -456,7 +456,7 @@ h1 {
 
 .header-nav--link {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--white-color);
   transition: color 0.3s ease;
 }
@@ -527,4 +527,15 @@ h1 {
   border-radius: 50px;
   box-shadow: 1px 2px 0 #f1a561;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-nav--list {
+    display: flex;
+  }
+  .sidebar-humburger--btn,
+  .sidebar,
+  .header-shade {
+    display: none;
+  }
 }
