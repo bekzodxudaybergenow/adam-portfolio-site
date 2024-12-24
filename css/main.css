@@ -344,6 +344,7 @@ template {
   --accent-color3: #A259FF;
   --accent-color4: #00C6AE;
   --accent-color5: #18191F;
+  --accent-color6: #474A57;
   --main-font: "Montserrat", sans-serif;
 }
 
@@ -389,6 +390,32 @@ h1 {
 
 .shade {
   transform: translateX(0) !important;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 18px;
+  padding: 4px 15px;
+  border: none;
+  border-radius: 8px;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+.btn::after {
+  content: "dsds";
+  position: absolute;
+  top: 4px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  z-index: -1;
+  background-color: var(--accent-color4);
+}
+.btn:active {
+  top: 4px;
 }
 
 @media screen and (min-width: 1440px) {
