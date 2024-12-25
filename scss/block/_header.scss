@@ -133,7 +133,7 @@
     cursor: pointer;
 }
 .hero {
-    padding-top: 80px;
+    padding: 80px 0;
 }
 .hero-row {
     display: flex;
@@ -146,18 +146,20 @@
 .hero-title {
     font-size: 40px;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: var(--accent-color5);
 }
 .hero-desc {
     font-size: 18px;
     font-weight: 600;
-    line-height: 28px;
+    line-height: 24px;
     color: var(--accent-color6);
 }
 .hero-btns {
+    display: flex;
+    column-gap: 15px;
     position: absolute;
-    bottom: 0;
+    bottom: 150px;
 }
 .hero-btn-me {
 }
@@ -186,10 +188,17 @@
     }
 }
 .header-social {
+    display: flex;
 }
 .social-list {
+    padding-top: 34px;
 }
 .header-social--link {
+    & img {
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
