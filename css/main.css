@@ -572,7 +572,7 @@ h1 {
 
 .hero-content {
   max-width: 270px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .hero-title {
@@ -620,18 +620,41 @@ h1 {
 
 .header-social {
   display: flex;
+  gap: 10px;
 }
 
 .social-list {
   padding-top: 34px;
 }
 
-.header-social--link img {
-  display: block;
+.header-social--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50px;
   height: 50px;
+  border-radius: 50px;
+  filter: grayscale(100%);
+  background-color: var(--white-color);
+}
+.header-social--link img {
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 
+@media screen and (min-width: 375px) {
+  .hero-btns {
+    bottom: 58px;
+  }
+  .social-list {
+    flex-direction: column;
+    position: absolute;
+    right: 8px;
+    bottom: 118px;
+    padding: 0;
+  }
+}
 @media screen and (min-width: 1024px) {
   .header-nav--list {
     display: flex;
