@@ -45,9 +45,10 @@ h1 {
     border-radius: 8px;
     color: var(--white-color);
     background-color: var(--black-color);
+    cursor: pointer;
 
     &::after {
-        content: 'dsds';
+        content: '';
         position: absolute;
         top: 4px;
         width: 100%;
@@ -56,6 +57,7 @@ h1 {
         z-index: -1;
         background-color: var(--accent-color4);
     }
+
     &:active {
         top: 4px;
     }
