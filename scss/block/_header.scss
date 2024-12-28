@@ -166,6 +166,8 @@
 .hero-btn--cv {
 }
 .hero-image {
+    display: inline-block;
+    position: relative;
     max-width: 280px;
     height: 320px;
     position: relative;
@@ -189,6 +191,7 @@
 }
 .header-social {
     display: flex;
+    margin-left: 10px;
     gap: 10px;
 }
 .social-list {
@@ -203,6 +206,11 @@
     border-radius: 50px;
     filter: grayscale(100%);
     background-color: var(--white-color);
+    transition: filter .3s ease;
+
+    &:hover {
+        filter: grayscale(0);
+    }
 
     & img {
         display: block;
@@ -217,9 +225,47 @@
     .social-list {
         flex-direction: column;
         position: absolute;
-        right: 8px;
+        left: 315px;
         bottom: 118px;
         padding: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    .hero-row {
+        flex-direction: row;
+        max-width: 640px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .hero-content {
+        margin: 0; 
+        max-width: 320px;
+    }
+    .hero-desc {
+        margin-bottom: 20px;
+    }
+    .hero-btns {
+        position: static;
+    }
+    .hero-image img {
+        width: 280px;
+    }
+    .social-list {
+        left: auto;
+        margin: 0;
+        right: 30px;
+    }
+
+}
+@media screen and (min-width: 820px) {
+    .hero-row {
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 920px) {
+    .hero-row {
+        max-width: 740px;
+        justify-content: space-around;
     }
 }
 @media screen and (min-width: 1024px) {
