@@ -616,7 +616,7 @@ h1 {
   height: 100%;
 }
 .hero-image::before {
-  content: "123";
+  content: "";
   width: 280px;
   height: 320px;
   position: absolute;
@@ -714,5 +714,57 @@ h1 {
   .sidebar,
   .header-shade {
     display: none;
+  }
+  .hero {
+    padding: 140px 0 120px;
+  }
+  .hero-row {
+    position: relative;
+    justify-content: space-between;
+    transform: translateX(-60px);
+  }
+  .hero-content {
+    margin: 70px 0 0 0;
+    max-width: 400px;
+    width: 100%;
+  }
+  .social-list {
+    left: auto;
+    margin: 0;
+    right: -152px;
+    bottom: -58px;
+  }
+  .hero-title {
+    font-size: 54px;
+    margin-bottom: 20px;
+  }
+  .hero-image img {
+    width: 350px;
+    height: 420px;
+    object-fit: contain;
+  }
+  .hero-image::before {
+    width: 338px;
+    height: 416px;
+    top: 15px;
+    left: 15px;
+  }
+  .header-social--link {
+    width: 58px;
+    height: 58px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .social-list {
+    right: -162px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-list {
+    right: -162px;
+  }
+  .hero-row {
+    max-width: 800px;
+    transform: translateX(-60px);
   }
 }
