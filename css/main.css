@@ -761,12 +761,12 @@ h1 {
 }
 @media screen and (min-width: 1200px) {
   .social-list {
-    right: -257px;
+    right: -270px;
     bottom: 58px;
   }
   .hero-row {
-    max-width: 900px;
-    transform: translateX(-80px);
+    max-width: 885px;
+    transform: translateX(-110px);
   }
   .hero-image {
     width: 450px;
@@ -778,6 +778,12 @@ h1 {
     border-left: 2px solid;
     border-right: 2px solid;
     object-fit: cover;
+  }
+  .hero-image::before {
+    width: 450px;
+    height: 600px;
+    top: 12px;
+    left: 12px;
   }
   .header-social--link {
     width: 70px;
