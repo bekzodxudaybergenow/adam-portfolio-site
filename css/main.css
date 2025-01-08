@@ -870,4 +870,19 @@ h1 {
     padding: 90px 52px;
     background-color: var(--accent-color7);
   }
+  .about-row--inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 60px;
+  }
+  .about-content {
+    order: 2;
+    color: var(--white-color);
+    margin-bottom: 40px;
+    max-width: 480px;
+  }
+  .about-picture img {
+    min-width: 300px;
+  }
 }

@@ -42,6 +42,17 @@
     display: flex;
     column-gap: 10px;
 }
+.about-btn--inner {
+}
+.about-btn--inner span {
+    // display: block;
+    // width: 200px;
+    // height: 40px;
+    // position: relative;
+    // top: 0;
+    // left: 0;
+    // background-color: aqua;
+}
 @media screen and (min-width: 1024px) {
     .about {
         background-color: transparent;
@@ -50,5 +61,22 @@
         width: 100%;
         padding: 90px 52px;
         background-color: var(--accent-color7);
+    }
+    .about-row--inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 60px;
+    }
+    .about-content {
+        order: 2;
+        color: var(--white-color);
+        margin-bottom: 40px;
+        max-width: 480px;
+    }
+    .about-picture {
+        & img {
+            min-width: 300px;
+        }
     }
 }
