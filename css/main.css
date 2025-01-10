@@ -898,13 +898,46 @@ h1 {
 }
 
 .service-content--title {
+  font-weight: 800;
   color: #000;
+  margin-bottom: 20px;
+}
+
+.service-content--desc {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
 }
 
 .service-list--item {
-  background-color: #A259FF;
   max-width: 380px;
   max-height: 572px;
+  background-color: #A259FF;
+  position: relative;
+  z-index: 10;
+  border-radius: 20px;
+  padding: 60px 20px 18px;
+}
+
+.service-list--item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  max-width: 380px;
+  width: 100%;
+  max-height: 572px;
+  height: 100%;
+  background-color: #000;
+  z-index: -1;
 }
 
 @media screen and (min-width: 1024px) {
