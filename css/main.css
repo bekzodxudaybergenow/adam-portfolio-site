@@ -1027,6 +1027,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  position: relative;
 }
 
 .contact-title {
@@ -1036,26 +1037,33 @@ h1 {
   margin-bottom: 50px;
 }
 
+.contact-content--inner {
+  display: flex;
+  max-width: 300px;
+  height: 62px;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  background-color: var(--black-color);
+}
+
 .contact-link {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   font-size: 20px;
-  max-width: 300px;
+  width: 100%;
   padding: 20px 0;
-  position: relative;
   border-radius: 20px;
+  position: absolute;
+  top: -10px;
+  left: 6px;
   color: var(--black-color);
   background-color: var(--bg-color);
 }
 
-.contact-link--shadow {
-  display: inline-block;
-  position: absolute;
-  top: 10px;
+.contact-link:active {
+  top: 0;
   left: 0;
-  width: 300px;
-  height: 100px;
-  background-color: var(--black-color);
 }
