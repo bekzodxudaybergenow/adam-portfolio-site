@@ -1,10 +1,6 @@
 .footer {
     padding-bottom: 40px;
 }
-.footer-row {
-}
-.footer-content {
-}
 .footer-content--inner {
     display: flex;
     flex-direction: column;
@@ -17,14 +13,15 @@
     border-radius: 50%;
     position: relative;
     margin-bottom: 10px;
+    border: 1px solid;
 }
 .footer-content--logo img {
     display: block;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -5px;
-    right: 5px;
+    width: 48px;
+    height: 48px;
+    top: -3px;
+    right: 3px;
 }
 .footer-content--logo:active {
     & img {
@@ -67,14 +64,16 @@
         height: 100%;
     }
 }
-.footer-bottom {
-}
 .footer-bottom--desc {
     font-size: 16px;
     font-weight: 500;
 }
 @media screen and (min-width: 375px){
     .footer-content--logo {
+        width: 58px;
+        height: 58px;
+    }
+    .footer-content--logo img{
         width: 58px;
         height: 58px;
     }
@@ -111,13 +110,6 @@
     }
 }
 @media screen and (min-width: 1024px) {
-    .footer-content--logo {
-        border: 1px solid;
-    }
-    .footer-content--logo img {
-        width: 58px;
-        height: 58px;
-    }
     .footer-content--title {
         font-size: 34px;
         font-weight: 800;
