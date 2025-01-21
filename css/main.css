@@ -857,6 +857,20 @@ h1 {
   line-height: 22px;
 }
 
+.about-btn--inner {
+  max-width: 100%;
+  border-radius: 8px;
+  background-color: var(--accent-color4);
+}
+
+.about-btn {
+  transform: translate(0, -4px);
+}
+
+.about-btn:active {
+  transform: translate(0, 0);
+}
+
 .about-btns {
   display: flex;
   column-gap: 10px;
